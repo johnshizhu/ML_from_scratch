@@ -35,6 +35,7 @@ class Linear_Regression():
          - Y_hat: True labels
          - W:     Weights
          - b:     Bias
+         
         '''
 
         self.shape_validation(X, Y_hat, W, b)
