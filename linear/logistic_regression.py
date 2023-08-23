@@ -48,9 +48,53 @@ class Logistic_Regression():
         cost = cost / m
         return cost
     
-    def gradient_descent():
+    def gradient_descent(self, X, Y_hat, W, b, learning_rate):
+        '''
+        Computes One step of gradient descent
+        Inputs:
+        X - Data
+        Y_hat - truth labels
+        W - weights
+        b - bias
+        learning_rate - learning rate alpha
+        Outputs:
+        W - Updated weights
+        b - updated bias
+        '''
+        z = self.linear(X, W, b)
+        Y = self.sigmoid(z)
+        m = X.shape[0]
+        
+        # Calculate dW and db
+        dW = (np.sum(np.dot(X, (Y - Y_hat)))) / m
+        db = (np.sum(Y - Y_hat)) / m
 
-        return
+        W = W - learning_rate * dW
+        b = b - learning_rate * db
+
+        return W, b
+    
+    def logistic_fit(self, X, Y_hat, learning_rate, iterations):
+        '''
+        Run logistic regression "iterations" number of times
+        Inputs:
+        X - Data
+        Y_hat - True labels
+        learning_rate - learning rate alpha
+        iterations - number of iterations of gradient descent
+        '''
+        # Randomly initialize weights
+        W = np.random.randn(X.shape[1])
+        b = 0.5
+
+        cost_list = []
+        
+        for i in range(iterations):
+            cost = self.calculate_cost(X, Y_hat, W, b)
+            cost_list.append(cost)
+
+            W, b = self.gradient_descent(X, Y_hat, W, b, learning_rate)
+        return W, b, cost_list
     
 
 
