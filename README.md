@@ -9,4 +9,6 @@ Written in Python
 - Support Vector Machines
 - Neural Networks
 
+All code is tested using python unittest
+
 This project is currently work in progress
