@@ -9,7 +9,9 @@ Written in Python
 - Support Vector Machines
 - Neural Networks
 
-All code is tested using python unittest
+Dependencies:
+- unittest
+- numpy
 
 
 This Project is built to deliver a education-based practical application of ML approaches, not to be the fastest/most efficient implementation.
