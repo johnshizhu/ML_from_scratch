@@ -13,7 +13,6 @@ Dependencies:
 - unittest
 - numpy
 
-
 Activation types:
 - linear
 - sigmoid

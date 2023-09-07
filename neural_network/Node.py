@@ -4,7 +4,7 @@ A node can take in a matrix/list of activations from a previous layer and output
 '''
 import numpy as np
 
-class NN_Node():
+class NN_Node:
 
     def __init__(self, input, activation, m, n):
         self.activation_name = activation
