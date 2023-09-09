@@ -20,5 +20,12 @@ Activation types:
 
 This Project is built to deliver a education-based practical application of ML approaches, not to be the fastest/most efficient implementation.
 
+To do:
+Testing
+Decision Trees
+Probabilistic
+SVM
+NN
+
 
 This project is currently work in progress
