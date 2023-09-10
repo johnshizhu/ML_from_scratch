@@ -8,6 +8,7 @@ Written in Python
 - Pobabilistic
 - Support Vector Machines
 - Neural Networks
+- Search
 
 Dependencies:
 - unittest
@@ -26,6 +27,7 @@ Decision Trees
 Probabilistic
 SVM
 NN
+Search
 
 
 This project is currently work in progress
